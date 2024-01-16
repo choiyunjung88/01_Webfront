@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/selector5.css">
+</head>
+<body>
+    <h1>기타 선택자</h1>
+
+    <h3>:only-child</h3>
+    <pre>
+        특정요소의 자식이 하나밖에 없을 때 선택
+    </pre>
+    <div id="test1">
+        <p>자식1</p>
+        <!-- <p>자식1</p> -->
+    </div>
+
+    <hr>
+
+    <h3>:only-of-type</h3>
+    <pre>
+        특정요소의 자식 중
+        저장된 형태와 같은 자식 요소가 하나만 있을 때 선택
+    </pre>
+    <div id="test2">
+        <p>자식1</p>
+        <pre>자식2</pre>
+    </div>
+
+    <hr>
+
+    <h3>:empty</h3>
+    <pre>
+        자식 요소가 없는 요소를 선택
+        - 자식 요소 개념
+        태그, 글자, 띄어쓰기 모두 자식 요소라고 함.
+    </pre>
+    <div id="test3">
+
+    <p></p>
+    <pl></pl>
+    </div>
+</body>
+</html>

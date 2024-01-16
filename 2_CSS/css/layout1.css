@@ -1,0 +1,38 @@
+/*상하 3분할*/
+#container-2 {
+    border: 3px solid black;
+    width: 300px;
+    height: 440px;
+}
+
+/*
+block 형식의 요손ㄴ 별도의
+width가 지정되지 않으면 항상 100%
+
+.div-2 {
+    width:100%;
+}*/
+
+container-2 > .div-2:nth-of-type(1) {
+    background-color: yellowgreen;
+    height: 20%;
+}
+container-2 > .div-2:nth-of-type(2) {
+    background-color: orange;
+    height: 30%;
+}
+container-2 > .div-2:nth-of-type(3) {
+    background-color: skyblue;
+    height: 50%
+}
+
+.div-4 {
+    border: 3px solid black;
+    height: 100px;
+}
+
+#test4 {
+    background-color: deeppink;
+    /* visibility: hidden;; */
+    display: none;
+}
