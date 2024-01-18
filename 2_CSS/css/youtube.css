@@ -1,0 +1,294 @@
+* {
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    margin: auto;
+}
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu {
+    display: flex;
+}
+#menu {
+    cursor: pointer;
+    font-size: 40px;
+    border: none;
+    color: gray;
+    background-color: transparent;
+    padding: 20px;
+}
+#home-logo {
+    width: 140px;
+    padding: 10px;
+}
+.search-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#search-bar {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#search-form input {
+    padding: 10px;
+    font-size: 15px;
+    width: 400px;
+    border: none; 
+    outline: none; 
+    background-color: transparent;
+}
+#search-form fieldset > button {
+    color: black;
+}
+#search-btn {
+    color: black;
+    border-left: 1px solid gray;
+}
+#search-1 {
+    border: 1px solid gray;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+fieldset {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header button {
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    color: gray;
+    background-color: transparent;
+}
+#my-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.content {
+    display: flex;
+    padding-left: 40px;
+}
+.content *{
+    margin: 5px 0px;
+}
+.main {
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+#video {
+    width: 100%;
+}
+.title {
+    font-weight: bold;
+}
+.profile-area * {
+    margin-right: 10px;
+}
+.profile-area {
+    display: flex;
+    justify-content: space-between;
+}
+#profile {
+    display: flex;    
+}
+.func {
+    display: flex;
+    align-items: center;
+}
+.func * {
+    margin: 0px;
+}
+.thumbs {
+    border: 0;
+    background-color: lightgray;
+    border-radius: 30px;
+    display: flex;
+    height: 30px;
+    margin-right: 10px;
+}
+.thumbs button:hover {
+    background-color: gray;
+    border-radius: 30px;
+}
+.thumbs button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+.thumbs button:nth-child(1){
+    border: 0;
+    border-right: 1px solid gray;
+}
+.share button,
+.more button {
+    border: 0;
+    background-color: lightgray;
+    border-radius: 30px;
+    display: flex;
+    height: 30px;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.share button:hover,
+.more button:hover{
+    background-color: gray;
+    border-radius: 30px;
+}
+#profile-img {
+    font-size: 40px;
+    cursor: pointer;
+    border: none;
+    color: gray;
+    background-color: transparent;
+}
+#profile p {
+    font-size: 15px;
+}
+#sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sub > button:nth-child(1) {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 5px;
+}
+#sub > button:nth-child(2) {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 5px;
+}
+.explaination h5 {
+    cursor: pointer;
+    background-color: lightgray;
+    border-radius: 5px;
+    padding: 5px;
+}
+.comments-area {
+    display: flex;
+    flex-direction: column;
+}
+.comments-num {
+    display: flex;
+}
+.comments-area p {
+    margin-left: 20px;
+}
+.comments-input {
+    display: flex;
+    align-items: center;
+
+}
+.comments-input i {
+    color: violet;
+    font-size: 30px;
+    margin: 15px;
+}
+.comments-input input {
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+    width: 100%;
+}
+.comment {
+    display: flex;
+}
+#comment-profile1 i {
+    color: blueviolet;
+    font-size: 30px;
+    margin: 15px;
+}
+#comment-profile2 i {
+    color: hotpink;
+    font-size: 30px;
+    margin: 15px;
+}
+#comment > section {
+    display: flex;
+    align-items: center;
+}
+#comment > section pre {
+    margin-left: 10px;
+}
+#comment > section > pre:nth-child(2) {
+    font-size: 12px;
+    color: gray;
+}
+#comment button {
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    padding: 10px;
+}
+#comment button:hover {
+    border: none;
+    border-radius: 50%;
+    background-color: gray;
+    padding: 10px;
+}
+
+.bar {
+    margin-right: 40px;
+    flex-basis: 30%;
+}
+.bar-btn button {
+    border: none;
+    padding: 7px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.bar-btn button:active {
+    color: white;
+    background-color: black;
+}
+#ad {
+    width: 440px;
+}
+.present {
+    display: flex;
+    flex-direction: column;
+}
+.present a {
+    display: flex;
+    color: black;
+    text-decoration: none;
+}
+.present a img{
+    height: 120px;
+}
+#prs-title {
+    margin-left: 30px;
+}
