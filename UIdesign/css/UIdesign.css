@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    height: 300px;
+    background-color: rgb(243, 181, 217);
+    display: flex;
+    align-items: center;
+}
+
+.header-btn {
+    padding-left: 20px;
+}
+header button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+header button:hover {
+    color: gray;    
+}
+
+@font-face {
+    font-family: 'YClover-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/YClover-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+header h1 {
+    margin-left: 100px;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    font-weight: 550;
+    font-family: 'YClover-Bold';
+    text-shadow: 3px 3px rgb(173, 137, 169);
+}
+
+nav {
+    height: 50px;
+    border-bottom: 1px solid rgb(85, 85, 85);
+    position: sticky;
+    top:0;
+    background-color: white;
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin:0;
+    padding:0;
+    height: 100%;
+}
+
+nav li {
+    flex-basis: 150px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    height: 100;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    transition-duration: 0.3s;
+}
+
+nav a:hover {
+    background-color: rgb(233, 149, 198);
+    color: white;
+    text-shadow: 2px 2px rgb(187, 157, 189);
+}
+
+.content {
+    display: flex;
+}
+
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.content * {
+    font-family: 'SUITE-Regular';
+    font-size: 30px;
+}
+
+.profile-area {
+    width: 40%;
+    padding-left: 12%;
+}
+
+.profile-area img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.profile pre:nth-child(1) {
+    margin: 5px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.profile pre:nth-child(2) {
+    color: gray;
+    margin: 0;
+    margin-left: 5px;
+    font-size: 25px;
+}
+
+#weather {
+    display:flex; 
+    justify-content: space-around;   
+    align-items: center;
+}
+
+#weather i {
+    margin: 10px;
+    border: none;
+    font-size: 80px;
+    color: black;
+}
+
+#weather > section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#weather > pre:nth-child(2) {
+    color: black;
+    font-size: 40px;
+}
+
+.profile button {
+    font-size: 20px;
+    background-color: transparent;
+    border: 1px solid gray;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.profile button:hover {
+    background-color: gray;
+    color: white;
+    border: 1px solid black;
+}
+
+#comment {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+}
+
+#comment pre{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#comment > li {
+    
+    margin: 0;
+}
+
+#comment a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+#comment a:hover {
+    text-decoration: underline;
+}
+.content-1 {
+    padding-left: 7%;
+    padding-right: 12%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.content-1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.content-1 a:hover {
+    text-decoration: underline;
+    color: gray;
+}
+
+.content-1 legend {
+    font-weight: bold;
+}
+
+.content-1 section {
+    padding: 20px;
+}
+
+.float {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#float {
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 2px solid gray;
+    border-radius: 50%;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    position: fixed;
+    top:800px;
+    right: 30px;
+}
+
+#float:hover {
+    color: rgb(136, 136, 136);
+}
+
+footer {
+    background-color: lightgray;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer > p {
+    font-weight: bold;
+}
+footer > section > * {
+    font-size: 14px;
+}
+footer a {
+    color: black;
+    text-decoration: none;
+}
+footer span {
+    padding: 0 10px;
+}

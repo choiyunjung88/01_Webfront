@@ -36,7 +36,6 @@ header {
     align-items: center;
 }
 #search-bar {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -291,4 +290,83 @@ header button {
 }
 #prs-title {
     margin-left: 30px;
+}
+
+/* 반응형 모바일 기준
+- 해상도 767px 이하면 무조건 여기 작성된 대로 css 적용해라
+*/
+@media all and (max-width: 767px) {
+
+    main {
+        width: 100vw;
+        padding-right: 10px ;
+        padding-left: 10px;
+    }
+    header {
+        width: 100%;
+    }
+    .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #menu {
+        font-size: 20px;
+        padding: 10px;
+    }
+    #home-logo {
+        display: none;
+    }
+    .search-area {
+        width: 80vw;
+    }
+    .content {
+        flex-direction: column;
+        padding: 0%;
+    }
+    #search-1 input {
+        width: 70px;
+    }
+    .main {
+        margin: 0;
+    }
+    .profile-area {
+        flex-direction: column;
+    }
+    .profile-area * {
+        margin-right: 0;
+    }
+    #profile {
+        justify-content: space-evenly;
+    }
+    .func {
+        justify-content: space-evenly;
+    }
+    .bar {
+        margin-right: 0px;
+    }
+    #prs-title {
+        margin-left: 0px;
+    }
+    #ad {
+        width: 100%;
+    }
+    .present a img{
+        height: 100%;
+    }
+    .comments {
+        padding-right: 10px;
+    }
+    #img-1 {
+        padding-right: 15px;
+    }
+}
+/* 태블릿 */
+@media all and (min-width: 768px) and (max-width:1023px) {
+    /* 스타일 입력 */
 }

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>쿠팡 로그인</title>
+        <link rel="stylesheet" href="css/coupang.css">
+    </head>
+    <body>
+        <main>
+            <section class="logo">
+                <img id="logo" src="../images/logo.png">
+            </section>
+            <section class="login">
+                <form>
+                    <section class="id">
+                        <section class="id-icon">
+                            <span id="message"></span>
+                        </section>
+                        <section id="id-area">
+                            <input id="id-input" type="text" placeholder="아이디(이메일)">
+                        </section>
+                    </section>
+                    <section class="pw">
+                        <section class="pw-icon">
+                            <span id="lock"></span>
+                        </section>
+                        <section id="pw-area">
+                            <input id="pw-input" type="password" placeholder="비밀번호">
+                            <span id="eye"></span>
+                        </section>
+                    </section>
+                    <section class="menu">
+                        <section>
+                            <label>
+                                <input type="checkbox"> 자동로그인
+                            </label>
+                        </section>
+                        <section>
+                            <a href="#">아이디(이메일)/비밀번호 찾기</a>
+                            <span id="right"></span>
+                        </section>
+                    </section>
+                    <button id="login-btn">로그인</button>
+                </form>
+                <button id="signup-btn">회원가입</button>
+            </section>
+        </main>
+        <footer>
+            &copy; Coupang Corp. All rights reserved.
+        </footer>
+    </body>
+</html>
