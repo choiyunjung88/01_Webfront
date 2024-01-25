@@ -60,12 +60,22 @@ function check5() {
 }
 
 function startGame() {
-    rand = Math.floor(Math.random() * 101);
+    rand = Math.floor(Math.random() * 100);
     input = prompt("1부터 100 사이 난수를 맞춰보세요");
-    if (rand == input) {
-        alert("맞히셨습니다");
-    }
-    if (input == null) {
-        alert("게임 취소");
+    while (true) {
+        if (rand == input) {
+            alert("맞히셨습니다");
+            break;
+        }
+        if (input == null) {
+            alert("게임 취소");
+            break;
+        }
+        if (input < rand) {
+            input = prompt("[up]  1부터 100 사이 난수를 맞춰보세요");
+        }
+        if (input > rand) {
+            input = prompt("[down]  1부터 100 사이 난수를 맞춰보세요");
+        }
     }
 }
