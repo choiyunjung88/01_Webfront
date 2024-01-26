@@ -1,0 +1,78 @@
+#face {
+    display: flex;
+    justify-content: center;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+
+#input {
+    margin-top: 50px;
+    height: 40px;
+    width: 330px;
+    border-bottom: 1px solid gray;
+}
+
+#numbers {
+    display: flex;
+    width: 340px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#numbers > div {
+    padding: 40px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#numbers > button {
+    padding: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    border: transparent;
+    background-color: transparent;
+}
+#btn {
+    display: flex;
+    flex-direction: column;
+}
+
+#add {
+    border: 2px solid rgb(157, 212, 74);
+    background-color: transparent;
+    color: rgb(157, 212, 74);
+    width: 330px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#remove {
+    border: 2px solid gray;
+    background-color: transparent;
+    color: gray;
+    width: 330px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#list {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: center;
+    border-left: 1px solid gray;
+    padding: 10px;
+    margin: 30px;
+}
+
+#call {
+    font-weight: bold;
+    font-size: 20px;
+}
