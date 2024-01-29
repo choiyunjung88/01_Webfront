@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/UI.css" />
+    </head>
+    <body>
+        <section id="settings">
+            <table id="table">
+                <tr id="tr1">
+                    <th>너비 :</th>
+                    <td><input class="num" id="width" type="number" /> px</td>
+                    <th>높이 :</th>
+                    <td><input class="num" id="height" type="number" /> px</td>
+                </tr>
+                <tr id="tr2">
+                    <th>글자크기 :</th>
+                    <td>
+                        <input class="num" id="fontsize" type="number" /> px
+                    </td>
+                    <th>굵기 :</th>
+                    <td>
+                        <label>보통</label
+                        ><input checked id="usual" type="radio" />
+                        <label>굵게</label><input id="bold" type="radio" />
+                    </td>
+                </tr>
+                <tr id="tr3">
+                    <th>글자색 :</th>
+                    <td><input id="fontcolor" /></td>
+                    <th>배경색 :</th>
+                    <td><input id="back" /></td>
+                </tr>
+                <tr id="tr4">
+                    <th>가로정렬 :</th>
+                    <td colspan="3">
+                        <label>왼쪽</label
+                        ><input checked id="left" type="radio" />
+                        <label>가운데</label><input id="center" type="radio" />
+                        <label>오른쪽</label><input id="right" type="radio" />
+                    </td>
+                </tr>
+                <tr id="tr5">
+                    <th>세로정렬 :</th>
+                    <td colspan="3">
+                        <label>위</label><input checked id="up" type="radio" />
+                        <label>가운데</label><input id="middle" type="radio" />
+                        <label>아래</label><input id="down" type="radio" />
+                    </td>
+                </tr>
+                <tr id="tr6">
+                    <th>출력 문자열 :</th>
+                    <td colspan="3">
+                        <input id="text" />
+                    </td>
+                </tr>
+
+                        
+
+                </tr>
+            </table>
+        </section>
+        
+        <section id="box">
+            <button id="apply">적용하기</button>
+            <div id="hello"></div>
+        </section>
+        <section></section>
+
+        <script src="../js/UI.js"></script>
+    </body>
+</html>
